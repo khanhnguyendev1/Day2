@@ -4,27 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ee33374-2195-4ca2-8862-3e062f0c2817" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/annotationbasedconfiguration/AccountRepository2Impl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/annotationbasedconfiguration/AccountService2Impl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/annotationbasedconfiguration/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javabasedconfiguration/BeanConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javabasedconfiguration/MainTestConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pojobeans/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pojobeans/AccountRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pojobeans/AccountRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pojobeans/AccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pojobeans/AccountServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xmlbasedconfiguration/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/annotationbasedconfiguration/beans.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/xmlbasedconfiguration/beans.xml" afterDir="false" />
+    <list default="true" id="8ee33374-2195-4ca2-8862-3e062f0c2817" name="Changes" comment="Day2demo">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dependencyinjection/AccountServiceConstructorImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dependencyinjection/AccountServiceSetterImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dependencyinjection/MainConstructor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dependencyinjection/MainSetter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/dependencyinjection/beans-constructor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/dependencyinjection/beans-setter.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,12 +29,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;khanhnguyendev1&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/khanhnguyendev1/Day2.git&quot;,
+    &quot;accountId&quot;: &quot;92d9988d-74a3-4cdb-94cf-444d2c8da71a&quot;
+  }
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/java/javabasedconfiguration/MainTestConfig.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/dependencyinjection/beans-constructor.xml" root0="SKIP_INSPECTION" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2kEm8cz5CwIgpzN4I8211ZbAmxq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -59,6 +59,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "Application.MainConstructor.executor": "Run",
+    "Application.MainSetter.executor": "Run",
     "Application.MainTestConfig.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -76,11 +78,17 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="xmlbasedconfiguration" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="dependencyinjection" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="MainTestConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="javabasedconfiguration.MainTestConfig" />
       <module name="Day2" />
+      <option name="VM_PARAMETERS" value="--add-opens java.base/java.lang=ALL-UNNAMED" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="javabasedconfiguration.*" />
@@ -106,7 +114,31 @@
       <option name="presentableId" value="Default" />
       <updated>1722856955538</updated>
     </task>
+    <task id="LOCAL-00001" summary="Day2demo">
+      <option name="closed" value="true" />
+      <created>1723025211346</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1723025211346</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Day2demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day2demo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -115,6 +147,15 @@
           <url>file://$PROJECT_DIR$/src/main/java/xmlbasedconfiguration/Main.java</url>
           <line>7</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/javabasedconfiguration/MainTestConfig.java</url>
+          <line>6</line>
+          <properties class="javabasedconfiguration.MainTestConfig" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
